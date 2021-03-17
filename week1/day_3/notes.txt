@@ -1,0 +1,13 @@
+Python Notes
+*input("") - after this code runs, it wll let the  user input somthing
+*len(variable) - count the number of characters in the variable
+
+While Loops
+
+If Statements
+*after the if statement you have to indent
+*when you do else retract the spacing to where the if statement was
+
+Grab user input
+
+convert string to a number
