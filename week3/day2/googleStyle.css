@@ -1,0 +1,43 @@
+.googleImage {
+  position: absolute;
+  top: 550px;
+  left: 650px;
+}
+.searchBar input {
+  position: absolute;
+  top: 750px;
+  left: 650px;
+  height: 60px;
+  width: 500px;
+  border-radius: 60px;
+}
+.googleSearch {
+  position: absolute;
+  top: 830px;
+  left: 750px;
+  height: 200px;
+  width: 500px;
+  cursor: pointer;
+}
+.feelingLucky {
+  position: absolute;
+  top: 830px;
+  left: 900px;
+  height: 60px;
+  width: 500px;
+  cursor: pointer;
+}
+
+.topLeft {
+  padding: 30px 30px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.topRight {
+  font-size: 25px;
+  position: absolute;
+  top: 35px;
+  left: 1725px;
+  cursor: pointer;
+}
