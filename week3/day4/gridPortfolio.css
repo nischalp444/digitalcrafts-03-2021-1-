@@ -1,0 +1,27 @@
+.mainContainer {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 0.1fr;
+  grid-template-areas:
+    "header header"
+    "photo description"
+    "footer footer";
+}
+
+header {
+  background-color: black;
+  grid-area: header;
+}
+#photo {
+  background-color: black;
+  grid-area: photo;
+}
+#description {
+  background-color: black;
+  grid-area: description;
+}
+footer {
+  background-color: black;
+  grid-area: footer;
+}
