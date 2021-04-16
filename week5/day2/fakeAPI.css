@@ -1,0 +1,27 @@
+body {
+  background-color: #dddddd;
+}
+button {
+  display: flex;
+  height: 30px;
+  width: 100px;
+  border: 30px;
+  border-radius: 30px;
+  margin: 15px;
+}
+.personButton {
+  padding-right: 10px;
+}
+.userimage {
+  height: 250x;
+  width: 250px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

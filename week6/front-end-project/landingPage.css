@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+body {
+  background-image: url("https://cdn.wallpapersafari.com/51/82/YO5DJQ.jpg");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* background-color: #24252a; */
+}
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+.logo {
+  cursor: pointer;
+}
+.nav__links {
+  list-style: none;
+}
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+  color: #0088a9;
+}
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+.headerDiv {
+  background-color: #0000ff;
+  display: flex;
+  justify-content: center;
+}
+.wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 0.8fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "table-container table-container table-container youtubeDiv"
+    "table-container table-container table-container youtubeDiv"
+    "table-container table-container table-container youtubeDiv"
+    "ScheduleGameDiv ScheduleGameDiv ScheduleGameDiv youtubeDiv";
+}
+.table-container {
+  grid-area: table-container;
+}
+.table {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  border-color: rgba(0, 136, 169, 1);
+}
+.youtubeDiv {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-area: youtubeDiv;
+  overflow: scroll;
+}
+.ScheduleGameDiv {
+  grid-area: ScheduleGameDiv;
+  border: 1px solid black;
+}
+.logo {
+  height: 130px;
+  width: 130px;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
+.Name {
+  height: 30px;
+  width: 250px;
+  background-color: #2e383b;
+  color: white;
+}
+.Sport {
+  height: 30px;
+  width: 250px;
+  background-color: #2e383b;
+  color: white;
+}
+.Location {
+  height: 30px;
+  width: 250px;
+  background-color: #2e383b;
+  color: white;
+}
+.Date {
+  height: 30px;
+  width: 250px;
+  background-color: #2e383b;
+  color: white;
+}
+.Time {
+  height: 30px;
+  width: 250px;
+  background-color: #2e383b;
+  color: white;
+}
+.scheduleGameClass {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 30px;
+}
+.scheduleGameHeader {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+@media (max-width: 1000px) {
+  .table {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    border-color: pink;
+  }
+  .wrapper {
+    position: sticky;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 0.8fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "table-container table-container table-container table-container"
+      "table-container table-container table-container table-container"
+      "ScheduleGameDiv ScheduleGameDiv ScheduleGameDiv ScheduleGameDiv"
+      "youtubeDiv youtubeDiv youtubeDiv youtubeDiv";
+  }
+}

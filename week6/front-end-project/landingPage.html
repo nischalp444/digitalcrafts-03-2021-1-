@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="landingPage.css">
+</head>
+<body>
+    
+    <header>
+        <img class="logo" src=".\logo2.png" alt="logo">
+        <nav>
+            <ul class="nav__links">
+                <li><a href="./landingPage.html">Home</a></li>
+                <li><a href="./tournament.html">Tournaments</a></li>
+                <li><a href="./signUp.html">Sign Up</a></li>
+                <li><a href="./logIn.html">Log In</a></li>
+            </ul>
+        </nav>
+        <a class=cta href="./contactUs.html"><button>Contact Us</button></a>
+    </header>
+    
+    <h2>Games Today</h2>
+    <div class="wrapper">
+    <div class="table-container">
+        <table class="table" border="10">
+            <thead>
+                <tr class="test">
+                    <th>Number</th>
+                    <th>Organizer</th>
+                    <th>Sport</th>
+                    <th>Location</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="youtubeDiv">
+        <!-- <section id="video"> -->
+            <iframe width="560" height="200" src="https://www.youtube.com/embed/ysO89jg52a0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <iframe width="560" height="200" src="https://www.youtube.com/embed/Lpbv9x44AhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <iframe width="560" height="200" src="https://www.youtube.com/embed/PVj_oYgWJfY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <iframe width="560" height="200" src="https://www.youtube.com/embed/EKMQF5V-8qU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <iframe width="560" height="200" src="https://www.youtube.com/embed/5GWOlPWKcyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bKOTKHtbM54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aJbescr3i4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Y4id5tlTYsY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+
+        <!-- </section> -->
+    </div>
+    
+    <div class="ScheduleGameDiv" ;>
+        <div >
+            <h3 class="scheduleGameHeader">Schedule Your own Game!</h3>
+        </div>
+        <form>
+            <br>
+            <label for="name">Name</label>
+            <input class="Name" type="text">
+            <br>
+            <label for="Sport">Sport</label>
+            <input class="Sport" type="text">
+            <br>
+            <label for="Location">Location</label>
+            <input class="Location" type="text">
+            <br>
+            <label for="Date">Date</label>
+            <input class="Date" type="date">
+            <br>
+            <label for="Time">Time</label>
+            <input class="Time" type="datetime">
+
+        </form>
+        <br>
+        <input type="button" value="Schedule a Game" class="scheduleGameClass">
+    </div>
+  
+</div>
+</body>
+<script src = "landingPage.js">
+</script>
+</html>

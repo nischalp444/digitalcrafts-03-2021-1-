@@ -1,0 +1,23 @@
+.parent {
+  height: 300px;
+  width: 300px;
+  background-color: blue;
+}
+.child {
+  height: 50%;
+  width: 50%;
+  background-color: royalblue;
+  /* transition: transform 1s cubic-bezier(1, 0.11, 0.58, 1); */
+  border-radius: 50%;
+  animation: top-btm-right 1s ease-in;
+}
+.parent:hover .child {
+  transform: translateY(100%) translateX(100%);
+  background-color: lightblue;
+}
+
+@keyframes top-btm-right {
+  100% {
+    transform: translateY(100%);
+  }
+}

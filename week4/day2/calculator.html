@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="">
+    <div class="container">
+        <div class="card">
+            <h1 class="header">Tip Calculator</h1>
+            <div class="line_break"></div>
+            <label for="cost">Cost ($)</label>
+            <input type="text" class="cost" name="cost" id="costycost" placeholder="Enter the bill amount">
+            <!-- <label for="tax">Tax (%)</label>
+            <input type="text" class="tax" name="tax" id="taxytax" placeholder="tax percentage"> -->
+            <label for="tip">Tip (%)</label>
+            <div></div>
+            <input type="text" class="tip" name="tip" id="tipytip" placeholder="Enter tip percentage">
+            <div></div>
+            <!-- event handler -->
+            <button type="button" class="button">CALCULATE TOTAL</button>
+            <div></div>
+            <h3 >Total amount of the bill (with tip) is: </h3>
+            <h3 class="total"></h3>
+            <div></div>
+            <ul class="previous-tips">
+
+            </ul>
+            
+        </div>
+        <div>
+        <p>Thank you for tipping!</p>
+        </div>
+    </div>
+</form>
+</body>
+<script>
+     function newFunction(num) {
+            return "$" + num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+        }
+
+    function tipCalc(){
+        const billCost = document.querySelector("#costycost").value
+        const billCostConverted = parseInt(billCost)
+        const tipAmount = document.querySelector("#tipytip").value
+        const tipAmountConverted = parseInt(tipAmount)
+        const tipTotal = billCostConverted * (tipAmountConverted / 100)
+        const amountPaid = billCostConverted + tipTotal
+        const convertedAmountPaid = newFunction(amountPaid)
+        const displayValue = document.querySelector(".total")
+        displayValue.innerText = convertedAmountPaid
+
+        const grabList = document.querySelector(".prev-tips")
+        const listItem = document.createElement("li")
+        listItem.innerText = tipTotal
+        grabList.append(listItem)
+
+        const numbervalidator = (Number) => {
+            myRegex = /^\d+$/
+            return myRegex.test(name);
+        }
+        //variable for tip pulled from html: tipAmount
+        //variable for bill pulled from html: bill cost
+
+        const pulledbutton = document.querySelector(".button")
+
+        pulledbutton.addEventListener("click", (event)=>{
+
+            // if (!numbervalidator(tipAmount.value)){
+            //     event.preventDefault()
+            //     alert("please enter a number")
+            // }
+        })
+        
+        
+    }
+
+    
+    
+</script>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="container"></div>
+        <div class="card"></div>
+        <div class="content"></div>
+    <div class="root">
+        <h1>The Weather</h1>
+        <input class="zipCode" type="text" placeholder="Enter a zip code">
+        <button class="button">Get Weather</button>
+    </div>
+
+</body>
+    <script>
+        const getWeather = async () => {
+            //Input Element Created
+            let zip = document.querySelector(".zipCode").value
+            // zipCode = 33772
+            
+            const data = await fetch(`http://api.openweathermap.org/data/2.5/weather?zip=${zip}&units=imperial&appid=f99fa99220971f40184400fafba5663e`)
+            const formattedJson = await data.json()
+
+            //created heading1
+            let heading1 = document.createElement("h1");
+
+            //inputs the data into heading1
+            heading1.innerHTML = formattedJson.main.temp;
+
+            //find the div root
+            let root = document.querySelector(".root");
+            
+            root.append(heading1)
+        
+            console.log(formattedJson)
+        };
+        const sub = document.querySelector(".button")
+            sub.addEventListener("click", function (){
+                getWeather()
+        })
+    
+    </script>
+</html>

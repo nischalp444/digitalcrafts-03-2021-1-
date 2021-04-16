@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+body {
+  background-image: url(./background.jpg);
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+.form-label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
+.form-check-input {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
+.form-check-label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
+form {
+  display: flex;
+  justify-content: center;
+}
+.form-floating {
+  width: 500px;
+}
+.col-12 {
+  display: flex;
+  justify-content: center;
+}
