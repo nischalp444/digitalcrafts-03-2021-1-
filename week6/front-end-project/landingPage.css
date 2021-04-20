@@ -66,6 +66,7 @@ button:hover {
     "table-container table-container table-container youtubeDiv"
     "ScheduleGameDiv ScheduleGameDiv ScheduleGameDiv youtubeDiv";
 }
+
 .table-container {
   grid-area: table-container;
 }
@@ -169,15 +170,7 @@ label {
     border-color: pink;
   }
   .wrapper {
-    position: sticky;
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 0.8fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-      "table-container table-container table-container table-container"
-      "table-container table-container table-container table-container"
-      "ScheduleGameDiv ScheduleGameDiv ScheduleGameDiv ScheduleGameDiv"
-      "youtubeDiv youtubeDiv youtubeDiv youtubeDiv";
+    display: flex;
+    flex-direction: column;
   }
 }
