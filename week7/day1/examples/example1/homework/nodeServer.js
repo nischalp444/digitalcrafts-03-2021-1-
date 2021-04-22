@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const { readFile } = require("fs");
+
 const PORT =2021;
 
 app.listen(PORT, () => {
