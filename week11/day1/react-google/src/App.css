@@ -1,0 +1,51 @@
+.header {
+  font-size: 15px;
+}
+.leftHeader {
+  display: flex;
+  padding: 15px;
+}
+.rightHeader {
+  display: flex;
+  justify-content: flex-end;
+}
+.googleImage {
+  height: 45vh;
+  width: 40vw;
+}
+.image {
+  display: flex;
+  justify-content: center;
+}
+.searchBar {
+  display: flex;
+  justify-content: center;
+}
+.searchBar1 {
+  width: 55vw;
+  height: 5vh;
+  border-radius: 30px;
+  border-color: azure;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.searchButton {
+  width: 17vw;
+  height: 5vh;
+  padding: 3px;
+  margin: 3px;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+}
+.luckyButton {
+  width: 17vw;
+  height: 5vh;
+  padding: 3px;
+  margin: 3px;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+}
